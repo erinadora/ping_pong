@@ -41,3 +41,51 @@ ul li {
   text-align: center;
   letter-spacing: 3px;
 }
+
+input {
+  width: 100px!important;
+  margin:auto;
+  text-align: center;
+  letter-spacing: 4px;
+  font-size: 22px;
+  font-family: menlo;
+}
+
+.result {
+  width: 200px;
+  margin: auto;
+}
+
+ul li {
+  width: 50px;
+  margin: auto;
+  text-align: center;
+
+}
+
+.heada {
+  background-image: url("../images/ball.jpg");
+  background-size: cover;
+  background-position: bottom;
+  color: #000;
+  height: 600px;
+  padding: 30px;
+  border-radius: 10%;
+}
+
+#list {
+  margin-right: 35px;
+}
+
+button {
+  border: none!important;
+  font-size: 45px;
+  text-align: center;
+  margin-right: 58px;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+
+button:hover {
+  text-decoration: underline overline line-through;
+}

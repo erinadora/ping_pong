@@ -3,7 +3,7 @@
   <head>
     <link href="css/bootstrap.css" rel='stylesheet' type='text/css'>
     <link href="css/style.css" rel="stylesheet" type="text/css">
-    <!-- <link href='https://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'> -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
     <script src="js/jquery-1.12.2.js"></script>
     <script src="js/scripts.js"></script>
     <title>Ping Pong</title>
@@ -12,18 +12,17 @@
     <div id="container">
       <header>
         <h1>Let's play a game of Ping Pong.</h1>
-
         <form id="game">
           <div class="form-group">
             <input id="input" class="form-control" type="text">
           </div>
-          <button type="submit" class="btn">Let's play</button>
+          <button type="submit">Begin</button>
           </form>
-
-        <h2>Your results:</h2>
       </header>
-      <ul>
+      <div class="result">
+      <ul id="list">
       </ul>
+    </div>
     </div>
   </body>
 </html>
