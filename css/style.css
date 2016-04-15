@@ -49,6 +49,11 @@ input {
   letter-spacing: 4px;
   font-size: 22px;
   font-family: menlo;
+
+}
+
+#back {
+  display: none;
 }
 
 .result {
@@ -74,7 +79,15 @@ ul li {
 }
 
 #list {
-  margin-right: 35px;
+  position: absolute;
+  top: 50%;
+  margin-left: 35px;
+}
+
+img {
+  position: absolute;
+  top: 50%;
+  right: 50%;
 }
 
 button {

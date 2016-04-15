@@ -1,16 +1,8 @@
-$(document).ready(function() {
-  $("h1").hide().fadeIn(2900).addClass("heada");
+function pingPong(input) {
 
-
-  $("#game").submit(function(event) {
-    $("button").hide();
-    $("input").hide();
-    $("#back").show();
-
-  var input = parseInt($("#input").val());
   var numbers = [];
-
-  for (var num = 1; num <= input; num++) {
+  
+  for (var num = 1; num <= input; num++) 
     if (num % 15 === 0) {
       numbers.push("pingpong");
     } else if (num % 5 === 0) {
@@ -20,14 +12,34 @@ $(document).ready(function() {
     } else {
       numbers.push(num);
     }
-  }
-  var items = document.getElementById("list")
-  for (var i = 0; i < numbers.length; i++ ) {
-      var item = document.createElement("li");
-      item.innerHTML = numbers[i];
-      items.appendChild(item);;
-      }
+    return numbers;
+  
+};
 
+//////////////////////////////////////////////////
+
+  $(document).ready(function() {
+
+  $("h1").hide().fadeIn(2900).addClass("heada");
+
+  $("#game").submit(function(event) {
     event.preventDefault();
+
+    var input = parseInt($("#input").val());
+    var output = pingPong(input);  
+    console.log(output);
+
+    output.forEach(function(x){
+    $('#list').append("<li>" + x + "</li>");
   });
+
+    $("button").hide();
+    $("input").hide();
+    $("#back").show();
+
+  });
+
 });
+
+
+
